@@ -1,0 +1,21 @@
+libs/
+node_modules/
+.DS_Store
+.idea/
+*.iml
+.project
+.svn
+npm-debug.log
+static/
+logs/*.log
+blocks/**/*.source.browser.js
+
+# bem
+.bem/cache/
+.enb/tmp/
+*bundles*/*/*.*
+!bundles/*/*.bemdecl.js
+!*bundles*/.bem/*
+*pages*/*/*.*
+!*pages*/*/*.bemjson.js
+!*pages*/.bem/*

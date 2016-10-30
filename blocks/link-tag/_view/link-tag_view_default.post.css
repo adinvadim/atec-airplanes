@@ -1,0 +1,26 @@
+.link-tag_view_default {
+    color: black;
+    text-align: left;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 12px;
+    font-family: var(--font);
+    line-height: 2.08;
+
+    &:before {
+        content: '#';
+        opacity: 0.4;
+    }
+
+
+    &:hover {
+        border-color: var(--color-links-hovered);
+        color: var(--color-links-hovered);
+
+        &:before {
+            color: var(--color-links-hovered);
+            opacity: 1;
+        }
+    }
+}

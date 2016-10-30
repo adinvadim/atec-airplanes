@@ -1,0 +1,3 @@
+block('expander')(
+    js()(true)
+);

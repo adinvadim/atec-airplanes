@@ -1,0 +1,126 @@
+.input {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid var(--color-border);
+    border-radius: 1px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+    &__box {
+        position: relative;
+        display: flex;
+        height: 100%;
+        color: inherit;
+        user-select: none;
+        -webkit-touch-callout: none;
+    }
+
+
+    &__control {
+        position: relative;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 100%;
+        outline: none;
+        border: 0;
+        background: none;
+        color: inherit;
+        font: inherit;
+        line-height: inherit;
+        -webkit-appearance: none;
+
+        &::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+
+        &::-webkit-search-cancel-button {
+            display: none;
+        }
+
+
+        &::-webkit-input-placeholder {
+            color: inherit;
+            text-indent: 0;
+            font-weight: normal;
+            font-family: var(--font);
+        }
+
+
+        &::-moz-placeholder {
+            color: inherit;
+            font-weight: 400;
+            font-family: var(--font);
+        }
+
+
+        &::-ms-clear {
+            display: none;
+        }
+
+
+        &::-webkit-autofill {
+            border: 1px solid transparent;
+            background-clip: padding-box;
+        }
+
+
+        &:focus {
+            color: black;
+            font-weight: normal;
+        }
+    }
+
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+
+    &__button {
+
+    }
+
+
+    &__clear {
+
+    }
+
+
+    &.input_focused {
+        z-index: 1;
+
+        .input__control {
+            text-overflow: clip;
+        }
+    }
+
+
+    &:hover,
+    &:focus,
+    &.input_focused {
+        &:before {
+            background: white;
+        }
+    }
+
+
+    &.input_disabled {
+        background: rgba(0, 0, 0, 0.08);
+
+        &:before,
+        .input__clear {
+            display: none;
+        }
+
+
+        .input__box,
+        .input__control {
+            color: rgba(0, 0, 0, 0.4);
+            cursor: default;
+        }
+    }
+
+}

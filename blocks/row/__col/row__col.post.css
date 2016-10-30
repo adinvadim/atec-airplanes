@@ -1,0 +1,120 @@
+.row {
+    &__col {
+        margin: 0px;
+
+        &:nth-child(n) {
+            margin: 0px;
+        }
+    }
+}
+
+/* mixin for COLs, $strict param is optional, $strict param means 
+availibility of current mod only on exact screen sizes */
+@define-mixin col_base_classes_extended $size, $strict {
+    @mixin col_base_classes $(size);
+    /* SIZES */
+     @for $i from 1 to 12 {
+        /* exact sizes */
+        .row__col_$(size)w$(strict)_$(i) {
+            lost-column: $i/$columns;
+            display: block;
+            margin: 0px;
+
+            &:nth-child(n) {
+                margin: 0px;
+            }
+        }
+
+
+        .row__col_$(size)w$(strict)_0 {
+            display: none
+        }
+
+
+        /* offset, doesnt work propely cuz of row display flex */
+        .row__col_$(size)of$(strict)_$(i) {
+            
+        }
+
+
+        /* order */
+        .row__col_$(size)or$(strict)_$(i) {
+            order: $i;
+        }
+    }
+
+    /* width availible */
+    .row__col_$(size)$(strict) {
+        flex: 1;
+    }
+
+
+    /* DIRECTIONS and DIRECTIONS-REVERSE, d - direction, r - row, c -column */
+    /* horizontal */
+    .row__col_$(size)dr$(strict) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: row;
+    }
+
+
+    /* vertical */
+    .row__col_$(size)dc$(strict) {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: column;
+    }
+}
+
+/* postfix s means strict */
+@media (--xsmall) {
+    @mixin col_base_classes_extended xs;
+}
+
+@media (--xsmall-only) {
+    @mixin col_base_classes_extended xs, s;
+}
+
+@media (--small) {
+    @mixin col_base_classes_extended s;
+}
+
+@media (--small-only) {
+    @mixin col_base_classes_extended s, s;
+}
+
+
+@media (--medium) {
+    @mixin col_base_classes_extended m;
+}
+
+@media (--medium-only) {
+    @mixin col_base_classes_extended m, s;
+}
+
+
+@media (--large) {
+    @mixin col_base_classes_extended l;
+}
+
+@media (--large-only) {
+    @mixin col_base_classes_extended l, s;
+}
+
+
+@media (--xlarge) {
+    @mixin col_base_classes_extended xl;
+}
+
+@media (--xlarge-only) {
+    @mixin col_base_classes_extended xl, s;
+}
+
+
+@media (--xxlarge) {
+    @mixin col_base_classes_extended xxl;
+}
+
+@media (--xxlarge-only) {
+    @mixin col_base_classes_extended xxl, s;
+}

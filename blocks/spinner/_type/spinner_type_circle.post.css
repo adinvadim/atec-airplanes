@@ -1,0 +1,63 @@
+.spinner {
+    &_type_circle {
+        .spinner {
+            &__trick {
+                $circleCount: 12;
+                $animationDuration: 1.2s;
+
+                position: relative;
+                top: 50%;
+                margin: var(--spinkit-spinner-margin);
+                width: var(--spinkit-size);
+                height: var(--spinkit-size);
+            }
+
+
+            &__dot {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+
+                &:before {
+                    display: block;
+                    margin: 0 auto;
+                    width: 15%;
+                    height: 15%;
+                    border-radius: 100%;
+                    background-color: var(--spinkit-spinner-color);
+                    content: '';
+                }
+            }
+        }
+    }
+}
+
+        /* TODO : calculations with variables do not work */
+@for $i from 2 through 12 {
+    .spinner__dot_$(i) {
+        transform: rotate(calc(360deg / var(--circleCount) * ($i - 1)));
+    }
+}
+
+@for $i from 1 through 12 {
+    .spinner__dot_$(i):before {
+        animation-name: sk-circleBounceDelay;
+        animation-duration: 1.2s;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out;
+        animation-delay: calc( var(--animationDuration) - var(--animationDuration) / var(--circleCount) * ($i - 1));
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-fill-mode: both;
+    }
+}
+
+
+@keyframes sk-circleBounceDelay {
+    0%, 80%, 100% { transform: scale(0) }
+
+
+    40% { transform: scale(1.0) }
+}

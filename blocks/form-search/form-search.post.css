@@ -1,0 +1,13 @@
+.form-search {
+    .input__button {
+        padding: 4px;
+        width: 30px;
+    }
+
+
+    &__icon {
+        display: block;
+        height: 100%;
+        color: #979797;
+    }
+}

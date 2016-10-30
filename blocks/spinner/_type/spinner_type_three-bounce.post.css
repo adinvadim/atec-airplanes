@@ -1,0 +1,50 @@
+.spinner {
+    &_type_three-bounce {
+        .spinner {
+            &__trick {
+                /* $animationDuration: 1.4s; */
+                /* $delayRange: 0.32s; */
+                position: absolute;
+                margin: $spinkit-spinner-margin;
+                width: $spinkit-size * 2;
+                text-align: center;
+            }
+
+
+            &__dot {
+                display: inline-block;
+                margin: 0px 15px;
+                width: calc(var(--spinkit-size) / 2);
+                height: calc(var(--spinkit-size) / 2);
+                border-radius: 100%;
+                background-color: var(--spinkit-spinner-color);
+                animation: sk-three-bounce 1.4s ease-in-out 0s infinite both;
+
+                &_1 {
+                    animation-delay: -0.32s;
+                }
+
+
+                &_2 {
+                    animation-delay: -0.32s / 2;
+                }
+
+
+                &_3 {
+
+                }
+            }
+        }
+    }
+}
+
+@keyframes sk-three-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+
+
+ 40% {
+    transform: scale(1.0);
+  }
+}

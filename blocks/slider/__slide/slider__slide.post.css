@@ -1,0 +1,7 @@
+.slider__slide {
+    border: 1px solid var(--color-border);
+
+    &_active {
+        border-bottom: 0px;
+    }
+}

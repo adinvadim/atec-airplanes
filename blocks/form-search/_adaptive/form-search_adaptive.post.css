@@ -1,0 +1,21 @@
+@media (--xsmall-only) {
+.form-search_adaptive {
+    width: 30px;
+    height: 30px;
+
+    &.form-search {
+        .input {
+            border: 0px;
+        }
+
+
+        .input__control {
+            display: none;
+        }
+
+
+        .input__clear {
+            display: none;
+        }
+    }
+}}

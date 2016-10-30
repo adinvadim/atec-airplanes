@@ -1,0 +1,33 @@
+.logo {
+    width: 160px;
+    height: 60px;
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid transparent;
+    }
+
+
+    &__picture {
+        width: 130px;
+        height: 100%;
+/* TODO: png -> svg */
+        background-image: svg-load('logo.svg');
+        background-position: center center;
+        background-size: 100% 100%;
+    }
+}
+
+@media (--xsmall-only) {
+.logo {
+    width: 40px;
+    height: 40px;
+
+    &__picture {
+        width: 40px;
+        height: 40px;
+        background-image: svg-load('logo_mobile.svg');
+    }
+}}

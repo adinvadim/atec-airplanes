@@ -1,0 +1,14 @@
+.expander {
+    &__content {
+        display: none;
+
+        &_expanded {
+            display: block;
+        }
+    }
+
+
+    &__button {
+        cursor: pointer;
+    }
+}

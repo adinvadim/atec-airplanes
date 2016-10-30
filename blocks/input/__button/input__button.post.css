@@ -1,0 +1,17 @@
+.input {
+    &__button {
+        outline: none;
+        border: none;
+        background: none;
+        background-position: center;
+        /*background: svg-load('search.svg');*/
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: opacity 0.1s ease-out;
+
+        &:focus {
+            border-radius: 1px;
+            box-shadow: 0 0 0 1px var(--color-main), inset 0 0 0 1px var(--color-main);
+        }
+    }
+}

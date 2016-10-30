@@ -1,0 +1,66 @@
+@import url(../../../libs/pickadate/lib/themes/classic.css)
+@import url(../../../libs/pickadate/lib/themes/classic.date.css)
+
+
+.picker__holder
+    min-width: 300px
+    left: -1px
+
+    &:focus
+        outline: none
+
+.picker__day--highlighted
+    border-color: $color-blue
+
+.picker--focused .picker__day--highlighted
+    background: $color-blue
+    color: white
+    &:hover
+        background: $color-blue
+        color: white
+
+.picker__day--today:before
+    border-top-color: white
+
+
+.picker__day--infocus:hover,
+.picker__day--outfocus:hover
+    background: $color-light-blue
+    color: white
+
+.picker__button--today,
+.picker__button--clear,
+.picker__button--close
+    &:hover
+        color: white
+        background: $color-light-blue
+        border-bottom-color: $color-light-blue
+
+    &:before
+        content: none
+
+.picker__button--today
+    &:before
+        content: ' '
+        border-top-color: $color-blue
+
+    &:hover:before
+        border-top-color: white
+
+
+
+
+.picker__nav--prev,
+.picker__nav--next
+    &:hover
+        background: $color-light-blue
+
+        &:before
+            border-right-color: white
+            border-left-color: white
+
+.picker__select--year,
+.picker__select--month
+    height: 28px
+
+

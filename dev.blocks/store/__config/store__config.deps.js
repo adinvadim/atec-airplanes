@@ -1,0 +1,6 @@
+({
+    shouldDeps : [
+        'redux-logger',
+        'objects'
+    ]
+})

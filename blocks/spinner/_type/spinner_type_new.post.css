@@ -1,0 +1,11 @@
+.spinner_type_new {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 200px;
+        height: 200px;
+    }
+}

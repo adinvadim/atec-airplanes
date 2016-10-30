@@ -1,0 +1,19 @@
+{
+  "name": "bem-project-stub",
+  "version": "1.7.0",
+  "description": "BEM project stub",
+  "bugs": "https://github.com/bem/project-stub/issues",
+  "ignore": [
+    ".bem/cache",
+    "node_modules",
+    "libs"
+  ],
+  "dependencies": {
+    "bem-components": "3.0.0",
+    "bem-forms": "v1.0.0",
+    "bem-stat-counters": "^1.3.1",
+    "bem-history": "^3.2.0",
+    "Swiper": "swiper#^3.3.1",
+    "le-player": "https://github.com/miptliot/le-player.git#master"
+  }
+}

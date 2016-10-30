@@ -1,0 +1,21 @@
+.input.input_size_medium {
+    font-size: 14px;
+    line-height: 1.4;
+
+    .input__control {
+        padding: 0 8px;
+        height: 36px;
+    }
+
+
+    .input__clear {
+        width: 28px;
+        height: 28px;
+    }
+
+
+    .input__button {
+        width: 28px;
+        height: 28px;
+    }
+}

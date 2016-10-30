@@ -1,0 +1,4 @@
+.icon_type_play {
+    background-image: svg-load(./icon_type_play.svg);
+    background-size: cover;
+}

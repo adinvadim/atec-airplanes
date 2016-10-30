@@ -1,0 +1,110 @@
+.row {
+    width: 100%;
+}
+
+/* mixin for ROWs, $strict param is optional */
+@define-mixin row_align_classes_extended $size, $strict {
+    @mixin row_align_classes $(size);
+
+    /* DIRECTIONS and DIRECTIONS-REVERSE, d - direction */
+    /* horizontal, r -row, rr - row-reverse, c - column, cr- column-reverse */
+    .row_$(size)dr$(strict) {
+        flex-direction: row;
+        flex-wrap: row;
+    }
+
+
+    /* vertical */
+    .row_$(size)dc$(strict) {
+        flex-direction: column;
+        flex-wrap: column;
+    }
+
+
+    /*ALIGN COLUMNS, a - align */
+    /* horizontal, l - left, c - center, r - right */
+    .row_$(size)al$(strict) {
+        justify-content: flex-start;
+        text-align: start;
+    }
+
+
+    .row_$(size)ac$(strict) {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .row_$(size)ar$(strict) {
+        justify-content: flex-end;
+        text-align: end;
+    }
+
+
+    /* vertical t - top, c - center, b- bottom*/
+    .row_$(size)vat$(strict) {
+        align-items: flex-start;
+    }
+
+
+    .row_$(size)vam$(strict) {
+        align-items: center;
+    }
+
+
+    .row_$(size)vab$(strict) {
+        align-items: flex-end;
+    }
+}
+
+@media (--xsmall) {
+    @mixin row_align_classes_extended xs;
+}
+
+@media (--xsmall-only) {
+    @mixin row_align_classes_extended xs, s;
+}
+
+@media (--small) {
+    @mixin row_align_classes_extended s;
+}
+
+@media (--small-only) {
+    @mixin row_align_classes_extended s, s;
+}
+
+
+@media (--medium) {
+    @mixin row_align_classes_extended m;
+}
+
+@media (--medium-only) {
+    @mixin row_align_classes_extended m, s;
+}
+
+
+@media (--large) {
+    @mixin row_align_classes_extended l;
+}
+
+@media (--large-only) {
+    @mixin row_align_classes_extended l, s;
+}
+
+
+@media (--xlarge) {
+    @mixin row_align_classes_extended xl;
+}
+
+@media (--xlarge-only) {
+    @mixin row_align_classes_extended xl, s;
+}
+
+
+@media (--xxlarge) {
+    @mixin row_align_classes_extended xxl;
+}
+
+@media (--xxlarge-only) {
+    @mixin row_align_classes_extended xxl, s;
+}

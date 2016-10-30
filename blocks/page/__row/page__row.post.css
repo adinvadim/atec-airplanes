@@ -1,0 +1,30 @@
+.page {
+    &__row {
+        box-sizing: border-box;
+        margin: 0 auto;
+        padding: 30px 20px;
+        max-width: var(--container-width);
+
+        &_first {
+            padding: 0px;
+            padding-top: 40px;
+        }
+
+
+        &_last {
+            padding-bottom: 60px;
+        }
+
+    }
+}
+
+
+@media (--xsmall-only) {
+    .page {
+        &__row {
+            &_padding-free {
+                padding: 0px;
+            }
+        }
+    }
+}

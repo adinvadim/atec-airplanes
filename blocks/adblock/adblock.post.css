@@ -1,0 +1,9 @@
+.adblock {
+    position: absolute;
+    left: -9999px;
+
+    &__detect {
+        width: 0;
+        height: 0;
+    }
+}

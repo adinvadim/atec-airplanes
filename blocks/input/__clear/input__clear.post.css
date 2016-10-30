@@ -1,0 +1,17 @@
+.input {
+    &__clear {
+        background: 50% 50% no-repeat;
+        opacity: 0;
+        cursor: text;
+        transition: opacity 0.1s ease-out;
+
+        &_visible {
+            opacity: 0.3;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}

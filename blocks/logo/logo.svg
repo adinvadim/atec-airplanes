@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="224px" height="106px" viewBox="0 0 224 106" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_theme_gray</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="113" height="106"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="113" height="106" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo_theme_gray">
+            <g id="logo__text" transform="translate(130.850006, 22.890600)">
+                <text id="МФТИ" fill="#504F4F" font-family="Roboto-Bold" font-size="30" font-weight="bold" letter-spacing="5.5">
+                    <tspan x="-2.84217094e-14" y="61.5094015">МФТ</tspan>
+                    <tspan x="71.390625" y="61.5094015">И</tspan>
+                </text>
+                <text id="ВИДЕО" fill="#504F4F" font-family="Roboto" font-size="30" font-weight="normal" letter-spacing="-1.2">
+                    <tspan x="0.031" y="29.9993994">ВИДЕ</tspan>
+                    <tspan x="74.1286562" y="29.9993994">О</tspan>
+                </text>
+                <rect id="text__ghost" x="0" y="0.99939939" width="96" height="68"></rect>
+            </g>
+            <g id="logo__spinner">
+                <path d="M52.141,69.606 L52.141,44.969 C52.141,44.969 51.985,40.31 55.616,42.678 C59.251,45.048 73.305,54.446 73.305,54.446 C73.305,54.446 77.805,57.051 73.305,60.132 C68.803,63.211 56.326,71.82 56.326,71.82 C56.326,71.82 52.141,75.45 52.141,69.606 L52.141,69.606 Z" id="Shape" fill="#504F4F"></path>
+                <path d="M40.877,55.409 L32.529,55.409 C32.529,39.094 45.802,25.822 62.117,25.822 L62.117,34.166 C50.406,34.166 40.877,43.696 40.877,55.409 L40.877,55.409 Z" id="Shape" fill="#16A5DC"></path>
+                <path d="M76.91,81.03 L72.738,73.805 C77.65,70.966 81.166,66.384 82.633,60.906 C84.102,55.426 83.346,49.701 80.512,44.789 L87.739,40.614 C91.69,47.46 92.741,55.433 90.696,63.066 C88.65,70.7 83.754,77.079 76.91,81.03 L76.91,81.03 Z" id="Shape" fill="#257FBF"></path>
+                <path d="M62.062,95.502 C53.89,95.502 45.644,93.019 38.541,87.858 C29.875,81.561 24.178,72.264 22.502,61.683 C20.824,51.101 23.371,40.499 29.668,31.833 C42.668,13.94 67.799,9.96 85.689,22.958 L80.785,29.711 C66.617,19.418 46.715,22.57 36.42,36.74 C31.434,43.603 29.418,51.999 30.746,60.376 C32.072,68.758 36.582,76.118 43.447,81.105 C57.615,91.4 77.519,88.248 87.814,74.078 L94.566,78.983 C86.725,89.774 74.477,95.502 62.062,95.502 L62.062,95.502 Z" id="Shape" fill="#4CC2EE"></path>
+                <path d="M62.221,105.691 C59.867,105.691 57.492,105.527 55.119,105.193 L56.279,96.927 C67.371,98.488 78.406,95.633 87.347,88.893 C96.292,82.153 102.077,72.333 103.636,61.243 C105.197,50.153 102.341,39.12 95.601,30.177 C88.861,21.234 79.042,15.448 67.951,13.889 L69.113,5.624 C82.41,7.493 94.185,14.429 102.267,25.152 C110.347,35.878 113.769,49.107 111.9,62.406 C110.033,75.704 103.097,87.478 92.371,95.56 C83.562,102.197 73.061,105.691 62.221,105.691 L62.221,105.691 Z" id="Shape" fill="#C6D8E5"></path>
+                <path d="M6.4,81.065 C-0.454,66.367 -1.174,49.882 4.373,34.645 C9.92,19.408 21.066,7.242 35.762,0.39 L39.289,7.953 C26.613,13.865 17,24.358 12.215,37.499 C7.432,50.644 8.053,64.859 13.965,77.539 L6.4,81.065 L6.4,81.065 Z" id="Shape" fill="#0369B3"></path>
+                <use id="spinner__ghost" stroke-opacity="0" stroke="#979797" mask="url(#mask-2)" stroke-width="2" fill-opacity="0" fill="#D8D8D8" xlink:href="#path-1"></use>
+            </g>
+            <rect id="logo__ghost" x="0" y="1.20918203e-14" width="227" height="106"></rect>
+        </g>
+    </g>
+</svg>

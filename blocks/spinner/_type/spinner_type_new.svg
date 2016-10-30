@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>best</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+
+    <g id="best" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+
+        <g id="lvl6" class="lvl6" stroke-width="0" stroke="#979797">
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+        </g>
+
+        <g id="lvl5" class="lvl5">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100.000000 100.000000" to="360 100.000000 100.000000" dur="6s" repeatCount="indefinite"/>
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M100,15 C53.0557963,15 15,53.0557963 15,100" id="shape5" stroke="#0369B3" stroke-width="10"></path>
+        </g>
+
+        <g id="lvl4" class="lvl4">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100.000000 100.000000" to="360 100.000000 100.000000" dur="4s" repeatCount="indefinite"/>
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M100,170 L100,170 C138.659932,170 170,138.659932 170,100 C170,61.3400675 138.659932,30 100,30" id="shape4" stroke="#C6D8E5" stroke-width="10"></path>
+        </g>
+
+        <g id="lvl3" class="lvl3">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100.000000 100.000000" to="360 100.000000 100.000000" dur="3s" repeatCount="indefinite"/>
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M100,45 C69.6243388,45 45,69.6243388 45,100 C45,130.375661 69.6243388,155 100,155 L100,155 C130.375661,155 155,130.375661 155,100" id="shape3" stroke="#4CC2EE" stroke-width="10"></path>
+        </g>
+
+        <g id="lvl2" class="lvl2">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100.000000 100.000000" to="360 100.000000 100.000000" dur="3.5s" repeatCount="indefinite"/>
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M100,140 L100,140 C122.09139,140 140,122.09139 140,100" id="shape2" stroke="#257FBF" stroke-width="10"></path>
+        </g>
+
+        <g id="lvl1" class="lvl1">
+            <animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 100.000000 100.000000" to="360 100.000000 100.000000" dur="2s" repeatCount="indefinite"/>
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M100,60 C77.90861,60 60,77.90861 60,100" id="shape1" stroke="#16A5DC" stroke-width="10"></path>
+        </g>
+
+        <g id="lvl0" class="lvl0">
+            <circle id="ghost" cx="100" cy="100" r="100"></circle>
+            <path d="M88.0009941,112.599145 L88.0009941,87.9621453 C88.0009941,87.9621453 87.8439941,83.3031453 91.4759941,85.6711453 C95.1099941,88.0411453 109.164994,97.4391453 109.164994,97.4391453 C109.164994,97.4391453 113.664994,100.044145 109.164994,103.125145 C104.662994,106.204145 92.1859941,114.813145 92.1859941,114.813145 C92.1859941,114.813145 88.0009941,118.443145 88.0009941,112.599145 L88.0009941,112.599145 Z" id="Shape" fill="#E3E3E3"></path>
+        </g>
+    </g>
+</svg>

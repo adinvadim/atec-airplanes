@@ -1,0 +1,20 @@
+:root {
+    --color-gray: #f5f5f5;
+    --color-border: #dcdcdc;
+    --color-main: #0170bc;
+    --color-additional: #643981;
+    --color-gray-darker:#4a4a4a;
+    --color-semiblack: rgb(128, 128, 128);
+    --color-links-hovered: #011f33;
+    --font-mono: 'Roboto Mono';
+    --font : 'Roboto';
+    --font-medium : 'Roboto-medium';
+    --container-width : 1240px;
+    --color-hover-icons-alpha : rgba(0, 30, 51, 0.4);
+    --color-hover-links : #011f33;
+    --spinkit-spinner-margin: 0px auto;
+    --spinkit-size: 80px;
+    --spinkit-spinner-color: #0170bc;
+    --circleCount: 12;
+    --animationDuration: 1.2s;
+}

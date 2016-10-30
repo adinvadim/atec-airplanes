@@ -1,0 +1,20 @@
+@custom-media --xsmall all and (min-width: 0px);
+@custom-media --xsmall-only all and (min-width: 0px) and (max-width: 576px);
+
+@custom-media --small all and (min-width: 576px);
+@custom-media --small-only all and (min-width: 576px) and (max-width: 720px);
+
+@custom-media --medium all and (min-width: 720px);
+@custom-media --medium-only all and (min-width: 720px) and (max-width: 940px);
+
+@custom-media --large all and (min-width: 940px);
+@custom-media --large-only all and (min-width: 940px) and (max-width: 1140px);
+
+@custom-media --xlarge all and (min-width: 1140px);
+@custom-media --xlarge-only all and (min-width: 1140px) and (max-width: 1440px);
+
+@custom-media --xxlarge all and (min-width: 1441px);
+@custom-media --xxlarge-only all and (min-width: 1441px) and (max-width: 1920px);
+
+@custom-media --monster all and (min-width: 1921px);
+@custom-media --monster-only all and (min-width: 1921px);

@@ -1,0 +1,14 @@
+.link {
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+
+    &_hovered {
+        cursor: pointer;
+    }
+
+
+    &:hover {
+        cursor: pointer;
+    }
+}
