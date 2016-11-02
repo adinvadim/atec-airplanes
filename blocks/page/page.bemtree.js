@@ -18,22 +18,22 @@ block('page')(
             {
                 block : 'adblock'
             },
-            // {
-            //     block : 'yandex-metrica',
-            //     params : {
-            //             id : data.settings.yandexkey,
-            //             webvisor : true,
-            //             clickmap : true,
-            //             trackLinks : true,
-            //             accurateTrackBounce : true
-            //         }
-            // },
-            // {
-            //     block : 'google-analytics',
-            //     params : {
-            //         id : data.settings.googlekey
-            //     }
-            // }
+            {
+                 block : 'yandex-metrica',
+                 params : {
+                         id : data.settings.yandexkey,
+                         webvisor : true,
+                         clickmap : true,
+                         trackLinks : true,
+                         accurateTrackBounce : true
+                     }
+             },
+             {
+                 block : 'google-analytics',
+                 params : {
+                     id : data.settings.googlekey
+                 }
+             }
         ];
     }),
 

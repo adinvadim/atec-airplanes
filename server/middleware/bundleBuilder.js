@@ -10,7 +10,7 @@ module.exports = function (req, res, next) {
         '/someplane/' : 'plane-index',
     };
 
-    var bundle = bundles[req._parsedOriginalUrl.path];
+    var bundle = bundles[req.path];
 
     enb.make(['bundles/' + bundle]).then(function() {
         next();

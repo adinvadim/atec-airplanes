@@ -1,4 +1,4 @@
-var express = require('express'),
+const express = require('express'),
     path = require('path'),
     router = express.Router(),
     log = require('./log.js'),
@@ -7,11 +7,11 @@ var express = require('express'),
     env = process.env.NODE_ENV,
     isDev = env === 'development';
 
-var bundleBuilder = require('./middleware/bundleBuilder.js');
+const bundleBuilder = require('./middleware/bundleBuilder.js');
 
-var dataBuilder = require('./middleware/dataBuilder.js');
+const dataBuilder = require('./middleware/dataBuilder.js');
 
-var render = isDev ? require('./render-dev.js') : require('./render.js');
+const render = isDev ? require('./render-dev.js') : require('./render.js');
 
 // router.use(function (req, res, next) {
 //     console.log('in router use : ')
@@ -21,11 +21,11 @@ var render = isDev ? require('./render-dev.js') : require('./render.js');
 //     next();
 // });
 
-router.get('/', 
+router.get('/',
     bundleBuilder,
     dataBuilder,
     function(req, res) {
-        var data = req.data;
+        const data = req.data;
         render(req, res, data);
     }
 );
@@ -34,7 +34,7 @@ router.get('/:plane',
     bundleBuilder,
     dataBuilder,
     function(req, res) {
-        var data = req.data;
+        const data = req.data;
         render(req, res, data);
     }
 );

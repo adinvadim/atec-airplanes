@@ -1,20 +1,25 @@
 'use strict';
-var enb = require('enb');
+const enb = require('enb');
+const requireWithoutCache = require('require-without-cache');
+const isDev = process.env.NODE_ENV === 'development';
+const _require = isDev
+    ? (path) => requireWithoutCache(path, require)
+    : require;
 
 module.exports = function (req, res, next) {
 
     // console.log('in dataBuilder : ');
     // console.log(req._parsedOriginalUrl);
 
-    var pages = {
+    const pages = {
         '/' : 'index',
         '/solo/' : 'solo',
-        '/zephir' : 'zephir',
-        '/phaeta' : 'phaeta',
+        '/zephir/' : 'zephir',
+        '/phaeta/' : 'phaeta',
         '/someplane' : 'someplane',
     }
 
-    var bundles = {
+    const bundles = {
         '/' : 'site-index',
         '/solo/' : 'plane-index',
         '/zephir/' : 'plane-index',
@@ -22,7 +27,7 @@ module.exports = function (req, res, next) {
         '/someplane/' : 'plane-index',
     };
 
-    var views = {
+    const views = {
         '/' : 'site-index',
         '/solo/' : 'plane-index',
         '/zephir/' : 'plane-index',
@@ -30,16 +35,13 @@ module.exports = function (req, res, next) {
         '/someplane/' : 'plane-index',
     };
 
-    var dataCommon = require('../../db/common.json');
-    var data = require('../../db/' + pages[req._parsedOriginalUrl.path] + '.json');
+    const dataCommon = _require('../../db/common.js');
+    const data = _require('../../db/' + pages[req.path] + '.js');
 
-    req.data = {};
-    Object.assign(req.data, dataCommon, data, { 
-        bundle : bundles[req._parsedOriginalUrl.path],
-        view : views[req._parsedOriginalUrl.path]
+    req.data = Object.assign({}, dataCommon, data, {
+        bundle : bundles[req.path],
+        view : views[req.path]
     });
-
-    // console.log(req.data);
 
     next();
 }
