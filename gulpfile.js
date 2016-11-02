@@ -77,9 +77,13 @@ gulp.task('iconssprite', () => {
 
 
 gulp.task('copy', () => {
-    gulp.src('./bundles/**/*')
-        .pipe(changed('./static/themes/new'))
-        .pipe(gulp.dest('./static/themes/new'));
+    return new Promise(function(resolve, reject) {
+        gulp.src('./bundles/**/*')
+            .pipe(changed('./static/themes/new'))
+            .pipe(gulp.dest('./static/themes/new'))
+            .on('end', resolve)
+            .on('error', reject);
+    })
 });
 
 gulp.task('vendor', () => {
@@ -97,7 +101,7 @@ gulp.task('watch', function() {
     server.start().then(function(result) {
         console.log(`Server exited with result ${result}`)
     })
-    gulp.watch('./bundles/**/*', ['copy']);
+    //gulp.watch('./bundles/**/*', ['copy']);
     gulp.watch('./server/**/*.js', ['server:start']);
     gulp.watch('./blocks/**/*.svg', ['iconssprite']);
     gulp.watch('./blocks/**/*.source.js', ['vendor'])
