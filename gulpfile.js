@@ -75,13 +75,8 @@ gulp.task('iconssprite', () => {
         .pipe(gulp.dest('./static/themes/new/_static'))
 })
 
-gulp.task('copy', () => {
-    gulp.src('./bundles/**/*')
-        .pipe(changed('../../web/themes/new'))
-        .pipe(gulp.dest('../../web/themes/new'));
-})
 
-gulp.task('copy2', () => {
+gulp.task('copy', () => {
     gulp.src('./bundles/**/*')
         .pipe(changed('./static/themes/new'))
         .pipe(gulp.dest('./static/themes/new'));
@@ -110,4 +105,4 @@ gulp.task('watch', function() {
 
 gulp.task('static', gulpsync.sync(['images', 'fonts', 'iconssprite', 'vendor']))
 
-gulp.task('default', gulpsync.sync(['clean', 'static', 'enb', 'copy', 'copy2', 'server:start', 'watch']))
+gulp.task('default', gulpsync.sync(['clean', 'static', 'enb', 'copy', 'server:start', 'watch']))
